@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toets Nederlands (Lkr Versie)</title>
+    <style>
+      .text-class {
+        color: rgb(255, 60, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="text-class">Vul aan met het juiste werkwoord!</h2>
+    <h3>Ik ____ mezelf _____ gedaan.</h3>
+    <h2 id="text"></h2>
+    <button id="w3Button" type="button" onclick="clickFunction()">Toon Oplossing</button>
+    <script>
+      function clickFunction() {
+        // Select element and get attribute       
+        let button = document.getElementsByTagName("h2")[0].getAttribute("class");
+        document.getElementById("text").innerHTML = button;
+      }
+    </script>
+  </body>
+</html>

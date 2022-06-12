@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<style>
+    h1, h2, h3, h4, p, h5, h6 {
+        font-family: verdana;
+    }
+    form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 700px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      form li + li {
+        margin-top: 1em;
+      }
+      
+      label {
+        /* Uniform size & alignment */
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+      }
+      
+      input,
+      textarea {
+        /* To make sure that all text fields have the same font settings
+           By default, textareas have a monospace font */
+        font: 1em verdana;
+      
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+      
+        /* Match form field borders */
+        border: 1px solid #999;
+      }
+      
+      input:focus,
+      textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+      }
+      
+      textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+      
+        /* Provide space to type some text */
+        height: 5em;
+      }
+      
+      .button {
+        /* Align buttons with the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
+      
+      button {
+        /* This extra margin represent roughly the same space as the space
+           between the labels and their text fields */
+        margin-left: .9em;
+      }
+</style>
+<head>
+    <title>Thomas Docs System</title>
+</head>
+<body>
+    <li class="button">
+        <form name="input" action="/docs system/login.html" method="get" id="user_passEntry">
+            <h2>Welkom bij het Thomas Documenten Systeem!</h2>
+            <h4>Klik hier om door te gaan naar de inlogpagina.</h4>
+        <button type="login">Login</button>
+      </li>
+    </form>
+</body>
